@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GadgetBox — Accesorios tecnologicos</title>
+  <link rel="icon" type="image/png" href="resources/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav wrap">
+      <div class="logo">
+        <img src="resources/logo.png" alt="Logo GadgetBox" width="32" height="32">
+        <span class="logo-text">GadgetBox</span>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="nav-cta" href="#contacto">Escríbenos</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Accesorios para celulares y computadoras</div>
+        <h1>Tu celular y <br>computadora,<br>siempre <em>listo.</em></h1>
+        <p>Fundas, cargadores, audífonos y protectores seleccionados para que tu equipo se vea bien y dure más. Entrega
+          en Managua y alrededores.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+          <a class="btn btn-ghost" href="#contacto">Pedir por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-glow"></div>
+        <div class="float-chip chip-1"><span class="dot-blue"></span> Envíos esta semana</div>
+        <div class="float-chip chip-2"><span class="dot-coral"></span> +40 productos</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="strip-track">
+      <span>Fundas y carcasas</span><span>·</span><span>Cargadores
+        rápidos</span><span>·</span><span>Audífonos</span><span>·</span><span>Power
+        banks</span><span>·</span><span>Protectores de pantalla</span><span>·</span><span>Cables y
+        adaptadores</span><span>·</span>
+      <span>Fundas y carcasas</span><span>·</span><span>Cargadores
+        rápidos</span><span>·</span><span>Audífonos</span><span>·</span><span>Power
+        banks</span><span>·</span><span>Protectores de pantalla</span><span>·</span><span>Cables y
+        adaptadores</span><span>·</span>
+    </div>
+  </div>
+
+  <section class="section" id="catalogo">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Catálogo</h2>
+        <p>Estos son productos de muestra.</p>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active">Todo</button>
+        <button class="filter-btn">Mouse Pads</button>
+        <button class="filter-btn">Cargadores</button>
+        <button class="filter-btn">Powers Bank</button>
+        <button class="filter-btn">Audifonos</button>
+        <button class="filter-btn">Teclados</button>
+        <button class="filter-btn">Mouses</button>
+        <button class="filter-btn">Cables</button>
+        <button class="filter-btn">Protectores</button>
+        <button class="filter-btn">Mas productos</button>
+
+
+      </div>
+      <div class="catalog">
+        <div class="card wide" data-pid="p1" data-code="" data-brand="Occiam"
+          data-desc="El formato perfecto para ti
+                                        Al ser in-ear, mejoran la calidad del audio y son de tamaño pequeño para poder insertarse en tu oreja. Son ideales para acompañarte a la hora de hacer ejercicio mientras te sumerges en el mejor sonido envolvente.">
+          <div class="card-media m4 gallery"
+            data-images='["resources/n35.png","resources/n35-lateral.jpg","resources/n35-frente.png"]'>
+            <img class="gallery-img" src="resources/n35.png" alt="Auriculares N35, foto 1">
+            <span class="tag">Más vendido</span>
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Audifonos</div>
+            <div class="card-name">Auriculares Inear Gamer Inalámbrico
+              N35 Negro Con Luz Verde Led </div>
+            <div class="card-foot"><span class="price">C$ 380</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media au_gamer gallery" data-images='["resources/au_gamer.jpg", "resources/au_gamer2.png"]'>
+            <img class="gallery-img" src="resources/au_gamer.jpg " alt="audifonos gamer unno tekno, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Audifonos</div>
+            <div class="card-name">Audifono gamer UNNO TEKNO</div>
+            <div class="card-foot"><span class="price">C$ 720</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media mousepad_lgt gallery" data-images='["resources/mousepad_lgt.png"]'>
+            <img class="gallery-img" src="resources/mousepad_lgt.png " alt="Mouse Pad Logitech Talla S">
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Mouse Pads</div>
+            <div class="card-name">Mouse Pad Logitech Talla S</div>
+            <div class="card-foot"><span class="price">C$ 590</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media au_gamer jbl gallery"
+            data-images='["resources/JBL auricular.png", "resources/JBL auricular2.png", "resources/JBL auricular3.png"]'>
+            <img class="gallery-img" src="resources/JBL auricular.png" alt="JBL auricular, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Audifonos</div>
+            <div class="card-name"> Auriculares JBL Quantum 100M2</div>
+            <div class="card-foot"><span class="price">C$ 1700</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media au_zenair jbl gallery"
+            data-images='["resources/au_zenair.jpg", "resources/au_zenair2.jpg", "resources/au_zenair3.jpg"]'>
+            <img class="gallery-img" src="resources/au_zenair.jpg" alt="Auriculares ZENAIR, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Audifonos</div>
+            <div class="card-name">Zenair Ows Enc Earbuds HS7515</div>
+            <div class="card-foot"><span class="price">C$ 620</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media argomtym jbl gallery"
+            data-images='["resources/argomtym.jpg", "resources/argomtym2.jpg"]'>
+            <img class="gallery-img" src="resources/argomtym.jpg" alt="teclado y mouse argom, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Teclados</div>
+            <div class="card-name">Teclado Arg-KB-2051BK y Mouse Gamer</div>
+            <div class="card-foot"><span class="price">C$ 620</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media mirana teclado gallery"
+            data-images='["resources/mirana.png", "resources/mirana2.jpg", "resources/mirana3.jpg"]'>
+            <img class="gallery-img" src="resources/mirana.png" alt="mirana teclado, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Teclados</div>
+            <div class="card-name">TECLADO C/MOUSE XTK-540S PINK XTECH</div>
+            <div class="card-foot"><span class="price">C$ 620</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media mousepad pergo gallery" data-images='["resources/mp_nova.png"]'>
+            <img class="gallery-img" src="resources/mousepad pergo.png" alt="Mousepad pergo, foto 1">
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Mouse Pads</div>
+            <div class="card-name">Mouse Pad Nova Ergonomico</div>
+            <div class="card-foot"><span class="price">C$ 390</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p3" data-code="" data-brand="" data-desc="">
+          <div class="card-media teclado_4en1 gallery" data-images='["resources/teclado_4en1.png"]'>
+            <img class="gallery-img" src="resources/teclado_4en1.png " alt="Kit 4 en 1, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Teclados</div>
+            <div class="card-name">Kit Gaming Eagle Warrior Rhino 4 In 1</div>
+            <div class="card-foot"><span class="price">C$ 1200</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p4" data-code="" data-brand="" data-desc="">
+          <div class="card-media m1 gallery" data-images='["resources/mousepadgenius24x24.jpg"]'>
+            <img class="gallery-img" src="resources/mousepadgenius24x24.jpg" alt="Mouse Pad Gaming RGB GENIUS 24X24CM">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Mouse Pads</div>
+            <div class="card-name">Mouse Pad Gaming RGB GENIUS 24X24CM</div>
+            <div class="card-foot"><span class="price">C$ 490</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p5" data-code="" data-brand="" data-desc="">
+          <div class="card-media m2 gallery" data-images=' ["resources/m20-pro-1.png","resources/m2-pro-2.png"]'>
+            <img class="gallery-img" src="resources/m20-pro-1.png" alt="Auriculares inalambricos M20 Pro">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Audifonos</div>
+            <div class="card-name">Auriculares Inalambricos Bluetooth M20 Pro</div>
+            <div class="card-foot"><span class="price">C$ 380</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p6" data-code="" data-brand="" data-desc="">
+          <div class="card-media cargador20w gallery"
+            data-images='["resources/cargadordb2.png", "resources/cargadordb.png"]'>
+            <img class="gallery-img" src="resources/cargadordb2.png" alt="Cargador de Pared 20W Doble salida">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Cargadores</div>
+            <div class="card-name">Cargador de Pared 20W Doble salida</div>
+            <div class="card-foot"><span class="price">C$ 420</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p6" data-code="" data-brand="" data-desc="">
+          <div class="card-media charger38w gallery"
+            data-images='["resources/charger38w.png", "resources/charger38w2.png"]'>
+            <img class="gallery-img" src="resources/charger38w.png"
+              alt="Cargador de Pared 38W Tipo-C + USB con enchufe plegable">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Cargadores</div>
+            <div class="card-name">Cargador de pared 38W Tipo-C + USB con enchufe plegable</div>
+            <div class="card-foot"><span class="price">C$ 390</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p7" data-code="" data-brand="" data-desc="">
+          <div class="card-media m5 gallery" data-images='["resources/pebC6.jpg","resources/pebC6-2.jpg"]'>
+            <img class="gallery-img" src="resources/pebC6.jpg" alt="Power bank C6 6000mah, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Powers Bank</div>
+            <div class="card-name">Power Bank ARG 6000mAh</div>
+            <div class="card-foot"><span class="price">C$ 390</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p7" data-code="" data-brand="" data-desc="">
+          <div class="card-media m5 gallery" data-images='["resources/PWB12.png","resources/PWB12-2.png"]'>
+            <img class="gallery-img" src="resources/PWB12.png" alt="Power bank C6 6000mah, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Powers Bank</div>
+            <div class="card-name">Power bank S12 de 12000 mAh</div>
+            <div class="card-foot"><span class="price">C$ 720</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p8" data-code="" data-brand="" data-desc="">
+          <div class="card-media m7" data-images='[ "resources/mica.jpg", "resources/mica-2.jpg"]'>
+            <img class="gallery-img" src="resources/mica.jpg" alt="Mica de vidrio templado, foto 1">
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Protectores</div>
+            <div class="card-name">Mica de vidrio templado</div>
+            <div class="card-foot"><span class="price">C$ 150</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p8" data-code="" data-brand="" data-desc="">
+          <div class="card-media m7 gallery"
+            data-images='[ "resources/funda.jpg", "resources/funda2.jpg", "resources/funda3.png"]'>
+            <img class="gallery-img" src="resources/funda.jpg" alt="Protectores de silicon para telefonos, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Protectores</div>
+            <div class="card-name">Protectores de silicon para telefonos</div>
+            <div class="card-foot"><span class="price">C$ 100-C$650</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media cableargom gallery"
+            data-images='["resources/cableargom.png","resources/cableargom2.png","resources/cableargom3.png"]'>
+            <img class="gallery-img" src="resources/cableargom.png" alt="Cable argom, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Cables</div>
+            <div class="card-name">Cable Lightning a USB - 3 metros</div>
+            <div class="card-foot"><span class="price">C$ 210</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media cableargom2 gallery" data-images='["resources/cargom.png","resources/cargom2.png"]'>
+            <img class="gallery-img" src="resources/cargom.png" alt="Cable argom, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Cables</div>
+            <div class="card-name">Cable trenzado de nailon de 65 W, tipo C a tipo C, 3 m</div>
+            <div class="card-foot"><span class="price">C$ 210</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media cableran gallery"
+            data-images='["resources/cableran.png","resources/cableran2.png", "resources/cableran3.png", "resources/cableran4.png"]'>
+            <img class="gallery-img" src="resources/cableran.png" alt="Cable argom, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Cables</div>
+            <div class="card-name">Cable Micro USB a USB 2.0 trenzado de nailon de 1,8 m Dura Form</div>
+            <div class="card-foot"><span class="price">C$ 210</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media cableranc gallery"
+            data-images='["resources/cableranc.png","resources/cableranc2.png", "resources/cableranc3.png"]'>
+            <img class="gallery-img" src="resources/cableranc.png" alt="Cable argom, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Cables</div>
+            <div class="card-name">Cable trenzado de nailon USB 2.0 tipo C a USB 2.0 de 1,8 m Dura Form</div>
+            <div class="card-foot"><span class="price">C$ 210</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media cablerani gallery"
+            data-images='["resources/cablerani.png","resources/cablerani2.png", "resources/cablerani3.png", "resources/cablerani4.png"]'>
+            <img class="gallery-img" src="resources/cablerani.png" alt="Cable argom, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Cables</div>
+            <div class="card-name">Cable Lightning a USB 2.0 trenzado de nailon de 1,8 m Dura Form</div>
+            <div class="card-foot"><span class="price">C$ 210</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media mousepad TOY STORY gallery" data-images='["resources/mpTS.png"]'>
+            <img class="gallery-img" src="resources/mpTS.png" alt="Mousepad TOY STORY, foto 1">
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Mouse Pads</div>
+            <div class="card-name">Mouse Pad TOY STORY</div>
+            <div class="card-foot"><span class="price">C$ 510</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media mouseklip gallery" data-images='["resources/mklip.jpg", "resources/mklip2.jpg"]'>
+            <img class="gallery-img" src="resources/mklip.jpg" alt="Mouse KMO-120BK Klip, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Mouses</div>
+            <div class="card-name">Mouse KMO-120BK Klip</div>
+            <div class="card-foot"><span class="price">C$ 290</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p2" data-code="" data-brand="" data-desc="">
+          <div class="card-media chargerargom gallery"
+            data-images='["resources/chargerargom.png", "resources/chargerargom2.png"]'>
+            <img class="gallery-img" src="resources/chargerargom.png" alt=" Cargador de pared argom 20W, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat"> Cargadores</div>
+            <div class="card-name">Cargador de pared argom 20W</div>
+            <div class="card-foot"><span class="price">C$ 299</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p11" data-code="" data-brand="" data-desc="">
+          <div class="card-media m13 gallery" data-images='["resources/nova.png "]'>
+            <img class="gallery-img" src="resources/nova.png" alt="soporte nova, foto 1">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Mas productos</div>
+            <div class="card-name">Soporte de escritorio NOVA Para laptop adaptable hasta 15.6 pulgadas</div>
+            <div class="card-foot"><span class="price">C$ 400</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+        <div class="card" data-pid="p12" data-code="" data-brand="" data-desc="">
+          <div class="card-media m14 gallery" data-images='["resources/mousenova.jpg"]'>
+            <img class="gallery-img" src="resources/mousenova.jpg" alt="Mouse Inalambrico NOVA">
+            <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+            <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+            <div class="gallery-dots"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-cat">Mouses</div>
+            <div class="card-name">Mouse Inalambrico NOVA 2.4GHZ DPI Ajustable</div>
+            <div class="card-foot"><span class="price">C$ 280</span><button class="add-btn">+</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="nosotros">
+    <div class="wrap about">
+      <div class="about-visual">
+        <div class="stat"><b>500+</b><span>clientes felices</span></div>
+        <div class="stat"><b>20+</b><span>productos en catálogo</span></div>
+        <div class="stat"><b>8h</b><span>tiempo de respuesta</span></div>
+        <div class="stat"><b>100%</b><span>originales</span></div>
+      </div>
+      <div>
+        <h2>Accesorios de calidad, precio justo</h2>
+        <p>GadgetBox nació para que encontrar un buen accesorio para tu celular no fuera complicado. Seleccionamos cada
+          producto pensando en durabilidad y buen precio.</p>
+        <p>Coordinamos entregas directas y respondemos rápido por WhatsApp e Instagram.</p>
+        <a class="btn btn-primary" href="#contacto">Hablar con nosotros</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <div class="wrap">
+      <div class="social">
+        <div>
+          <h2>Síguenos y escríbenos</h2>
+          <p>Publicamos nuevos productos, ofertas y disponibilidad todos los días en nuestras redes.</p>
+        </div>
+        <div class="social-links">
+          <a class="social-link" href="https://wa.me/50500000000" target="_blank" rel="noopener">
+            <div class="social-left">
+              <div class="social-icon ic-wa">W</div>
+              <div>
+                <div class="social-name">WhatsApp</div>
+                <div class="social-handle">Pedidos y consultas</div>
+              </div>
+            </div>
+            <span class="arrow">↗</span>
+          </a>
+          <a class="social-link" href="https://instagram.com/gadgetbox" target="_blank" rel="noopener">
+            <div class="social-left">
+              <div class="social-icon ic-ig">IG</div>
+              <div>
+                <div class="social-name">Instagram</div>
+                <div class="social-handle">@gadgetbox</div>
+              </div>
+            </div>
+            <span class="arrow">↗</span>
+          </a>
+          <a class="social-link" href="https://facebook.com/gadgetbox" target="_blank" rel="noopener">
+            <div class="social-left">
+              <div class="social-icon ic-fb">f</div>
+              <div>
+                <div class="social-name">Facebook</div>
+                <div class="social-handle">GadgetBox</div>
+              </div>
+            </div>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot-row">
+      <div class="logo"><span class="logo-dot"></span>GadgetBox</div>
+      <div class="foot-note">© 2026 GadgetBox — Accesorios para celular</div>
+    </div>
+  </footer>
+
+  <div class="pmodal" id="productModal" aria-hidden="true">
+    <div class="pmodal-backdrop" data-close="1"></div>
+    <div class="pmodal-panel" role="dialog" aria-modal="true" aria-labelledby="pmName">
+      <button class="pmodal-close" type="button" data-close="1" aria-label="Cerrar">✕</button>
+      <div class="pmodal-media gallery" id="pmMedia">
+        <img class="gallery-img" id="pmImg" src="" alt="">
+        <button class="gallery-arrow prev" type="button" aria-label="Foto anterior">‹</button>
+        <button class="gallery-arrow next" type="button" aria-label="Foto siguiente">›</button>
+        <div class="gallery-dots" id="pmDots"></div>
+      </div>
+      <div class="pmodal-info">
+        <div class="pmodal-cat" id="pmCat">Categoría</div>
+        <h3 class="pmodal-name" id="pmName">Nombre del producto</h3>
+
+        <div class="pmodal-meta">
+          <div class="pmodal-field">
+            <label>Código</label>
+            <span id="pmCode">—</span>
+          </div>
+          <div class="pmodal-field">
+            <label>Marca</label>
+            <span id="pmBrand">—</span>
+          </div>
+        </div>
+
+        <div class="pmodal-price" id="pmPrice">C$ 0</div>
+
+        <div class="pmodal-qty-row">
+          <label for="pmQty">Cantidad</label>
+          <select id="pmQty">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <a class="btn btn-primary" id="pmOrder" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+        </div>
+
+        <div class="pmodal-desc">
+          <div class="pmodal-desc-head">
+            <span>Descripción</span>
+          </div>
+          <p id="pmDesc">Aún no hay descripción para este producto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
