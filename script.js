@@ -1,3 +1,36 @@
+// ---------- Header con sombra al hacer scroll ----------
+const siteHeader = document.querySelector('header');
+if (siteHeader) {
+  const toggleHeaderShadow = () => {
+    siteHeader.classList.toggle('is-scrolled', window.scrollY > 8);
+  };
+  toggleHeaderShadow();
+  window.addEventListener('scroll', toggleHeaderShadow, { passive: true });
+}
+
+// ---------- Revelado suave al hacer scroll ----------
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealTargets = document.querySelectorAll(
+  '.section-head, .custom-order-note, .catalog .card, .about-visual, .about > div, .social'
+);
+
+revealTargets.forEach(el => el.classList.add('reveal'));
+
+if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  revealTargets.forEach(el => revealObserver.observe(el));
+} else {
+  revealTargets.forEach(el => el.classList.add('is-visible'));
+}
+
 // ---------- Menú móvil ----------
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
