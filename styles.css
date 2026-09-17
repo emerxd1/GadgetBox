@@ -271,96 +271,80 @@ header {
 .hero-visual {
   position: relative;
   aspect-ratio: 1/1.05;
-  background:
-    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.08) 1.5px, transparent 0) 0 0/22px 22px,
-    var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.7fr;
+  gap: 12px;
   overflow: hidden;
   animation: heroUp .7s ease .1s both;
 }
 
-.phone-glow {
-  width: 62%;
-  aspect-ratio: 9/18.5;
-  background: linear-gradient(160deg, var(--blue), #7c3aff 60%, var(--coral));
-  border-radius: 38px;
-  box-shadow: 0 0 90px rgba(53, 86, 255, 0.55);
-  position: relative;
-  animation: phonePulse 4s ease-in-out infinite;
-}
-
-.phone-glow::after {
-  content: '';
-  position: absolute;
-  inset: 10px;
-  border-radius: 28px;
-  background: rgba(21, 21, 28, 0.35);
-}
-
-.phone-glow::before {
-  content: '';
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 34%;
-  height: 6px;
-  border-radius: 100px;
-  background: rgba(21, 21, 28, 0.4);
-  z-index: 1;
-}
-
-@keyframes phonePulse {
-
-  0%,
-  100% {
-    box-shadow: 0 0 90px rgba(53, 86, 255, 0.55);
-  }
-
-  50% {
-    box-shadow: 0 0 60px rgba(255, 90, 54, 0.5);
-  }
-}
-
-.float-chip {
-  position: absolute;
-  background: #fff;
-  border-radius: 16px;
-  padding: 10px 16px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+.bento-cell {
+  border-radius: 20px;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform .3s ease;
+  pointer-events: none;
+}
+
+.bento-icon {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  opacity: 0.9;
+}
+
+.b1 {
+  background-color: var(--blue);
+  grid-row: span 2;
+  animation: heroUp .6s ease .18s both;
+}
+
+.b2 {
+  background-color: var(--coral);
+  animation: heroUp .6s ease .26s both;
+}
+
+.b3 {
+  background-color: var(--ink);
+  animation: heroUp .6s ease .34s both;
+}
+
+.b4 {
+  grid-column: span 2;
+  background: linear-gradient(90deg, #0e0e14, #1c1c26);
+  flex-direction: row;
   align-items: center;
-  gap: 8px;
-  animation: chipFloat 3.6s ease-in-out infinite;
+  justify-content: space-between;
+  padding: 16px 20px;
+  animation: heroUp .6s ease .42s both;
 }
 
-.chip-1 {
-  top: 12%;
-  left: 8%;
-  animation-delay: 0s;
+.bento-big {
+  font-size: 1.3rem;
 }
 
-.chip-2 {
-  bottom: 14%;
-  right: 6%;
-  animation-delay: 1.8s;
-}
-
-@keyframes chipFloat {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
+.bento-small {
+  font-size: 0.72rem;
+  color: #9a9aa5;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
 .dot-blue,
@@ -462,6 +446,33 @@ header {
   color: var(--muted);
   max-width: 380px;
   font-size: 1rem;
+}
+
+/* ---------- Aviso de pedidos personalizados ---------- */
+.custom-order-note {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(90deg, rgba(53, 86, 255, 0.08), rgba(255, 90, 54, 0.08));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin-bottom: 32px;
+}
+
+.custom-order-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.custom-order-note p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.custom-order-note strong {
+  color: var(--blue);
 }
 
 /* ---------- Category filters ---------- */
