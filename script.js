@@ -31,6 +31,22 @@ if (!prefersReducedMotion && 'IntersectionObserver' in window) {
   revealTargets.forEach(el => el.classList.add('is-visible'));
 }
 
+// ---------- Menú activo según la sección visible (scrollspy) ----------
+const spySections = document.querySelectorAll('section[id]');
+const spyLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+if (spySections.length && spyLinks.length && 'IntersectionObserver' in window) {
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        spyLinks.forEach(link => {
+          link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`);
+        });
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  spySections.forEach(sec => spyObserver.observe(sec));
+}
+
 // ---------- Menú móvil ----------
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
